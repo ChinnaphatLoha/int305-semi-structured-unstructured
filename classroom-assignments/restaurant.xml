@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<restaurant xmlns:menu="http://www.example.com/menu" xmlns:ing="http://www.example.com/ingredients">
+    <menu:food>
+        <menu:title>Pasta Carbonara</menu:title>
+        <menu:price>129</menu:price>
+        <ing:ingredients>
+            <ing:item name="Pasta">200g</ing:item>
+            <ing:item name="Bacon">100g</ing:item>
+            <ing:item name="Eggs">2</ing:item>
+            <ing:item name="Parmesan">50g</ing:item>
+            <ing:item name="Black Pepper">To taste</ing:item>
+        </ing:ingredients>
+    </menu:food>
+
+    <menu:food>
+        <menu:title>Margherita Pizza</menu:title>
+        <menu:sizes>
+            <menu:size>Small</menu:size>
+            <menu:size>Medium</menu:size>
+            <menu:size>Large</menu:size>
+        </menu:sizes>
+        <menu:prices>
+            <menu:price size="Small">69</menu:price>
+            <menu:price size="Medium">119</menu:price>
+            <menu:price size="Large">179</menu:price>
+        </menu:prices>
+        <ing:ingredients>
+            <ing:item name="Pizza Dough">250g</ing:item>
+            <ing:item name="Tomato Sauce">100g</ing:item>
+            <ing:item name="Mozzarella">150g</ing:item>
+            <ing:item name="Basil">Few leaves</ing:item>
+            <ing:item name="Olive Oil">Drizzle</ing:item>
+        </ing:ingredients>
+    </menu:food>
+</restaurant>
