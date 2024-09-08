@@ -131,8 +131,6 @@
 
 You can query the XML data using XPath. Below are some problems that will help you explore various XPath topics comprehensively:
 
-### 1. Basic Node Selection
-
 - **Select all company names in the food chain**:
 
   - "BurgerTown"
@@ -141,8 +139,6 @@ You can query the XML data using XPath. Below are some problems that will help y
 - **Select the headquarters of the company named "BurgerTown"**:
   - "New York, USA"
 
-### 2. Filtering with Conditions
-
 - **Find all branches that have more than 100 employees**:
 
   - Branch id="101" (Location: Los Angeles, USA)
@@ -150,8 +146,7 @@ You can query the XML data using XPath. Below are some problems that will help y
 - **List all items in the menu where the price is greater than 10 USD or EUR**:
   - Spaghetti Carbonara (12.50 EUR)
   - Lasagna (13.00 EUR)
-
-### 3. Attribute-Based Queries
+  - Penne Arrabbiata (11.00 EUR)
 
 - **Select all branches with a specific `id` (e.g., branch with `id="101"`)**:
 
@@ -162,8 +157,6 @@ You can query the XML data using XPath. Below are some problems that will help y
   - Onion Rings
   - Garlic Bread
 
-### 4. Navigating Parent and Child Nodes
-
 - **Select the email address of the manager of the branch located in Los Angeles**:
 
   - <john.doe@burgertown.com>
@@ -171,8 +164,6 @@ You can query the XML data using XPath. Below are some problems that will help y
 - **Get the names of all items served at the Florence branch**:
   - Spaghetti Carbonara
   - Lasagna
-
-### 5. Aggregation
 
 - **Calculate the total number of branches across all companies**:
 
@@ -184,8 +175,6 @@ You can query the XML data using XPath. Below are some problems that will help y
   - Florence branch: 2 items
   - Milan branch: 2 items
 
-### 6. Sibling Node Queries
-
 - **Select the names of items that have the same parent as the "Classic Burger" (i.e., its sibling items)**:
 
   - Cheeseburger
@@ -193,9 +182,7 @@ You can query the XML data using XPath. Below are some problems that will help y
 
 - **Find all managers who are responsible for branches with more than 80 employees**:
   - John Doe (Los Angeles)
-  - Giulia Bianchi (Milan)
-
-### 7. Combining Conditions
+  - Jane Smith (Chicago)
 
 - **Select all managers whose branches have more than 50 employees and serve a pasta dish**:
 
@@ -204,8 +191,6 @@ You can query the XML data using XPath. Below are some problems that will help y
 
 - **Find all menu items that are burgers and cost more than 8 USD**:
   - Cheeseburger (8.49 USD)
-
-### 8. Wildcard Queries
 
 - **Select all elements that have the `Price` element as a child**:
 
@@ -222,8 +207,6 @@ You can query the XML data using XPath. Below are some problems that will help y
 - **Select all elements regardless of their tag names under the `<FoodChain>` root**:
   - Company elements and all their descendants, including BurgerTown and PastaParadise and their branches, managers, and menus.
 
-### 9. Attribute Value Matching
-
 - **Retrieve the menu item names with a price in "USD"**:
 
   - Classic Burger
@@ -235,8 +218,6 @@ You can query the XML data using XPath. Below are some problems that will help y
 - **Select all branches managed by people with the first name "Jane"**:
   - Branch id="102" (Location: Chicago, USA, Manager: Jane Smith)
 
-### 10. Complex Path Expressions
-
 - **Get the list of company names that have branches offering items in the "Pasta" category**:
 
   - PastaParadise
@@ -246,5 +227,3 @@ You can query the XML data using XPath. Below are some problems that will help y
   - Lasagna
   - Penne Arrabbiata
   - Garlic Bread
-
-These expected results will help you cross-check your XPath queries as you work through the practice problems. Let me know if you want additional guidance!
