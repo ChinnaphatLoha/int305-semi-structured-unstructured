@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spotify xmlns:i="http://www.w3.org/2001/XMLSchema-instance" i:noNamespaceSchemaLocation="spotify.xsd">
+    <track mode="Major" key="B">
+        <name>Seven (feat. Latto) (Explicit Ver.)</name>
+        <artist_name>Latto</artist_name>
+        <artist_name>Jung Kook</artist_name>
+        <release>
+            <year>2023</year>
+            <month>7</month>
+            <day>14</day>
+        </release>
+        <streams>141381703</streams>
+        <chart_rank>
+            <spotify>147</spotify>
+            <apple>263</apple>
+            <deezer>10</deezer>
+            <shazam>826</shazam>
+        </chart_rank>
+    </track>
+    <track mode="Minor" key="A">
+        <name>Love Story</name>
+        <artist_name>Taylor Swift</artist_name>
+        <release>
+            <year>2023</year>
+            <month>8</month>
+            <day>20</day>
+        </release>
+        <streams>121345678</streams>
+        <chart_rank>
+            <spotify>1</spotify>
+            <apple>1</apple>
+        </chart_rank>
+    </track>
+    <track mode="Major" key="C">
+        <name>Shape of You</name>
+        <artist_name>Ed Sheeran</artist_name>
+        <release>
+            <year>2023</year>
+            <month>5</month>
+            <day>22</day>
+        </release>
+        <streams>200000000</streams>
+        <chart_rank>
+            <spotify>2</spotify>
+            <apple>5</apple>
+        </chart_rank>
+    </track>
+    <track mode="Major" key="D">
+        <name>Love Me Like You Do</name>
+        <artist_name>Ellie Goulding</artist_name>
+        <release>
+            <year>2022</year>
+            <month>12</month>
+            <day>15</day>
+        </release>
+        <streams>105000000</streams>
+        <chart_rank>
+            <spotify>3</spotify>
+        </chart_rank>
+    </track>
+</spotify>

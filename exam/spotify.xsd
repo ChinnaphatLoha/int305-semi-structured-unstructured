@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="spotify">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="track" maxOccurs="unbounded" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="track">
+        <xs:complexType>
+            <xs:sequence>
+
+                <xs:element name="name" type="xs:string" />
+                <xs:element name="artist_name" type="xs:string" minOccurs="1" maxOccurs="10" />
+                <xs:element ref="release" />
+                <xs:element name="streams" type="xs:positiveInteger" />
+                <xs:element ref="chart_rank" />
+
+            </xs:sequence>
+
+            <xs:attribute name="mode" default="Major">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="Major"/>
+                        <xs:enumeration value="Minor"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+            <xs:attribute name="key " type="xs:string"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="release">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="year" type="xs:positiveInteger" />
+                <xs:element name="month" type="xs:positiveInteger" />
+                <xs:element name="day" type="xs:positiveInteger" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="chart_rank">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="spotify" type="xs:positiveInteger" />
+                <xs:element name="apple" type="xs:positiveInteger" minOccurs="0" />
+                <xs:element name="deezer" type="xs:positiveInteger" minOccurs="0" />
+                <xs:element name="shazam" type="xs:positiveInteger" minOccurs="0" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
