@@ -1,0 +1,62 @@
+Select all company names in the food chain:
+/FoodChain/Company/Name/text()
+
+Select the headquarters of the company named "BurgerTown":
+/FoodChain/Company[Name="BurgerTown"]/Headquarters/text()
+//Company[Name="BurgerTown"]/Headquarters/text()
+
+Find all branches that have more than 100 employees:
+/FoodChain/Company/Branches/Branch[Employees > 100]
+//Branch[Employees > 100]
+
+List all items in the menu where the price is greater than 10 USD or EUR:
+//Menu/Item/Price[. > 10 and (@currency = "USD" or @currency = "EUR")]/..
+
+Select all branches with a specific id (e.g., branch with id="101"):
+//Branch[@id="101"]
+
+
+Retrieve the names of all food items that belong to the "Side" category:
+//Menu/Item[Category="Side"]/Name/text()
+
+Select the email address of the manager of the branch located in Los Angeles:
+//Branch[contains(Location, "Los Angeles")]/Manager/Contact/Email/text()
+
+Get the names of all items served at the Florence branch:
+//Branch[contains(Location, "Florence")]/Menu/Item/Name/text()
+
+Calculate the total number of branches across all companies:
+count(//Company//Branch)
+
+Count how many menu items each branch offers:
+//Branch/concat(Location, ' : ', count(Menu/Item))
+
+Select the names of items that have the same parent as the "Classic Burger" (i.e., its sibling items):
+//Menu/Item[../Item[Name="Classic Burger"]]/Name/text()
+
+Find all managers who are responsible for branches with more than 80 employees:
+//Branch[Employees > 80]/Manager
+
+Select all managers whose branches have more than 50 employees and serve a pasta dish:
+//Branch[Employees > 50 and Menu[.//Category="Pasta"]]/Manager
+
+Find all menu items that are burgers and cost more than 8 USD:
+//Menu/Item[Category="Burger" and Price[. > 8 and @currency="USD"]]
+
+Select all elements that have the Price element as a child:
+//*[Price]
+
+Select all elements regardless of their tag names under the <FoodChain> root:
+//FoodChain//*
+
+Retrieve the menu item names with a price in "USD":
+//Menu/Item[Price/@currency="USD"]/Name/text()
+
+Select all branches managed by people with the first name "Jane":
+//Branch[Manager/Name[starts-with(., 'Jane')]]
+
+Get the list of company names that have branches offering items in the "Pasta" category:
+//Company[Branches/Branch/Menu/Item/Category="Pasta"]/Name/text()
+
+Select all food items served at branches located in Italy:
+//Branch[contains(Location, "Italy")]/Menu/Item

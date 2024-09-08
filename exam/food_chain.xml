@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FoodChain xmlns:i="http://www.w3.org/2001/XMLSchema-instance" i:noNamespaceSchemaLocation="food_chain.xsd">
+    <Company id="1">
+        <Name>BurgerTown</Name>
+        <Headquarters>New York, USA</Headquarters>
+        <EstablishedYear>1985</EstablishedYear>
+        <Branches>
+            <Branch id="101">
+                <Location>Los Angeles, USA</Location>
+                <Employees>120</Employees>
+                <Manager>
+                    <Name>John Doe</Name>
+                    <Contact>
+                        <Email>john.doe@burgertown.com</Email>
+                        <Phone>+1-213-456-7890</Phone>
+                    </Contact>
+                </Manager>
+                <Menu>
+                    <Item id="M101">
+                        <Name>Classic Burger</Name>
+                        <Category>Burger</Category>
+                        <Price currency="USD">7.99</Price>
+                    </Item>
+                    <Item id="M102">
+                        <Name>Cheeseburger</Name>
+                        <Category>Burger</Category>
+                        <Price currency="USD">8.49</Price>
+                    </Item>
+                    <Item id="M103">
+                        <Name>French Fries</Name>
+                        <Category>Side</Category>
+                        <Price currency="USD">2.99</Price>
+                    </Item>
+                </Menu>
+            </Branch>
+            <Branch id="102">
+                <Location>Chicago, USA</Location>
+                <Employees>95</Employees>
+                <Manager>
+                    <Name>Jane Smith</Name>
+                    <Contact>
+                        <Email>jane.smith@burgertown.com</Email>
+                        <Phone>+1-312-987-6543</Phone>
+                    </Contact>
+                </Manager>
+                <Menu>
+                    <Item id="M104">
+                        <Name>Veggie Burger</Name>
+                        <Category>Burger</Category>
+                        <Price currency="USD">7.49</Price>
+                    </Item>
+                    <Item id="M105">
+                        <Name>Onion Rings</Name>
+                        <Category>Side</Category>
+                        <Price currency="USD">3.49</Price>
+                    </Item>
+                </Menu>
+            </Branch>
+        </Branches>
+    </Company>
+
+    <Company id="2">
+        <Name>PastaParadise</Name>
+        <Headquarters>Rome, Italy</Headquarters>
+        <EstablishedYear>1995</EstablishedYear>
+        <Branches>
+            <Branch id="201">
+                <Location>Florence, Italy</Location>
+                <Employees>60</Employees>
+                <Manager>
+                    <Name>Marco Rossi</Name>
+                    <Contact>
+                        <Email>marco.rossi@pastaparadise.it</Email>
+                        <Phone>+39-055-2233445</Phone>
+                    </Contact>
+                </Manager>
+                <Menu>
+                    <Item id="P101">
+                        <Name>Spaghetti Carbonara</Name>
+                        <Category>Pasta</Category>
+                        <Price currency="EUR">12.50</Price>
+                    </Item>
+                    <Item id="P102">
+                        <Name>Lasagna</Name>
+                        <Category>Pasta</Category>
+                        <Price currency="EUR">13.00</Price>
+                    </Item>
+                </Menu>
+            </Branch>
+            <Branch id="202">
+                <Location>Milan, Italy</Location>
+                <Employees>80</Employees>
+                <Manager>
+                    <Name>Giulia Bianchi</Name>
+                    <Contact>
+                        <Email>giulia.bianchi@pastaparadise.it</Email>
+                        <Phone>+39-02-778899</Phone>
+                    </Contact>
+                </Manager>
+                <Menu>
+                    <Item id="P103">
+                        <Name>Penne Arrabbiata</Name>
+                        <Category>Pasta</Category>
+                        <Price currency="EUR">11.00</Price>
+                    </Item>
+                    <Item id="P104">
+                        <Name>Garlic Bread</Name>
+                        <Category>Side</Category>
+                        <Price currency="EUR">4.50</Price>
+                    </Item>
+                </Menu>
+            </Branch>
+        </Branches>
+    </Company>
+</FoodChain>
