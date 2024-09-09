@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<playlists xmlns:i="http://www.w3.org/2001/XMLSchema-instance" i:noNamespaceSchemaLocation="youtube.xsd">
+    <!-- Music Playlist -->
+    <playlist title="Top 10 Music Hits" description="Best of the week music" createdDate="2024-08-15" category="Music">
+        <video title="Song 1" duration="PT3M45S" uploadDate="2024-07-01" viewCount="100000" likes="15000" comments="1200">
+            <tags>
+                <tag>Pop</tag>
+                <tag>Top10</tag>
+                <tag>2024Hits</tag>
+            </tags>
+        </video>
+        <video title="Song 2" duration="PT4M30S" uploadDate="2024-07-03" viewCount="50000" likes="8000" comments="500">
+            <tags>
+                <tag>Rock</tag>
+                <tag>Top10</tag>
+                <tag>NewRelease</tag>
+            </tags>
+        </video>
+        <video title="Song 3" duration="PT2M50S" uploadDate="2024-07-05" viewCount="75000" likes="12000" comments="800">
+            <tags>
+                <tag>HipHop</tag>
+                <tag>Top10</tag>
+                <tag>Trending</tag>
+            </tags>
+        </video>
+        <tags>
+            <tag>Weekly</tag>
+            <tag>Billboard</tag>
+        </tags>
+    </playlist>
+
+    <!-- Education Playlist -->
+    <playlist title="Learning JavaScript" description="Essential JS tutorials" createdDate="2024-01-05" category="Education">
+        <video title="JS Basics" duration="PT15M" uploadDate="2023-12-01" viewCount="45000" likes="8000" comments="900">
+            <tags>
+                <tag>JavaScript</tag>
+                <tag>Programming</tag>
+                <tag>Tutorial</tag>
+            </tags>
+        </video>
+        <video title="Async JS Explained" duration="PT25M30S" uploadDate="2024-01-02" viewCount="75000" likes="15000" comments="2200">
+            <tags>
+                <tag>JavaScript</tag>
+                <tag>Async</tag>
+                <tag>Advanced</tag>
+            </tags>
+        </video>
+        <video title="JavaScript ES6" duration="PT20M" uploadDate="2024-01-10" viewCount="50000" likes="10000" comments="1300">
+            <tags>
+                <tag>JavaScript</tag>
+                <tag>ES6</tag>
+                <tag>Programming</tag>
+            </tags>
+        </video>
+        <tags>
+            <tag>Learning</tag>
+            <tag>Programming</tag>
+        </tags>
+    </playlist>
+
+    <!-- Gaming Playlist -->
+    <playlist title="Top 5 Gaming Moments" description="The best gaming highlights" createdDate="2024-02-15" category="Gaming">
+        <video title="Epic Game 1" duration="PT10M" uploadDate="2024-01-20" viewCount="1000000" likes="200000" comments="15000">
+            <tags>
+                <tag>FPS</tag>
+                <tag>Action</tag>
+                <tag>Multiplayer</tag>
+            </tags>
+        </video>
+        <video title="Epic Game 2" duration="PT12M45S" uploadDate="2024-01-25" viewCount="900000" likes="180000" comments="12000">
+            <tags>
+                <tag>RPG</tag>
+                <tag>Adventure</tag>
+                <tag>SinglePlayer</tag>
+            </tags>
+        </video>
+        <tags>
+            <tag>Trending</tag>
+            <tag>Highlights</tag>
+        </tags>
+    </playlist>
+
+    <!-- Fitness Playlist -->
+    <playlist title="Daily Workout Routine" description="Best fitness exercises" createdDate="2024-05-10" category="Fitness">
+        <video title="Morning Stretch" duration="PT5M" uploadDate="2024-04-01" viewCount="40000" likes="10000" comments="300">
+            <tags>
+                <tag>Fitness</tag>
+                <tag>Stretching</tag>
+                <tag>Morning</tag>
+            </tags>
+        </video>
+        <video title="Full Body Workout" duration="PT20M" uploadDate="2024-04-02" viewCount="150000" likes="30000" comments="1200">
+            <tags>
+                <tag>Fitness</tag>
+                <tag>FullBody</tag>
+                <tag>HIIT</tag>
+            </tags>
+        </video>
+        <video title="Yoga Flow" duration="PT15M" uploadDate="2024-04-05" viewCount="60000" likes="15000" comments="500">
+            <tags>
+                <tag>Fitness</tag>
+                <tag>Yoga</tag>
+                <tag>Relaxation</tag>
+            </tags>
+        </video>
+        <tags>
+            <tag>Health</tag>
+            <tag>Wellness</tag>
+        </tags>
+    </playlist>
+
+    <!-- Cooking Playlist -->
+    <playlist title="Easy Cooking Recipes" description="Delicious meals for beginners" createdDate="2024-03-05" category="Cooking">
+        <video title="Pasta Carbonara" duration="PT7M30S" uploadDate="2024-02-01" viewCount="80000" likes="18000" comments="900">
+            <tags>
+                <tag>Cooking</tag>
+                <tag>Italian</tag>
+                <tag>Beginner</tag>
+            </tags>
+        </video>
+        <video title="Chicken Curry" duration="PT10M" uploadDate="2024-02-03" viewCount="120000" likes="25000" comments="1200">
+            <tags>
+                <tag>Cooking</tag>
+                <tag>Asian</tag>
+                <tag>Spicy</tag>
+            </tags>
+        </video>
+        <video title="Chocolate Cake" duration="PT12M" uploadDate="2024-02-05" viewCount="95000" likes="21000" comments="1100">
+            <tags>
+                <tag>Cooking</tag>
+                <tag>Dessert</tag>
+                <tag>Sweet</tag>
+            </tags>
+        </video>
+        <tags>
+            <tag>Recipes</tag>
+            <tag>HomeCooking</tag>
+        </tags>
+    </playlist>
+
+    <!-- Lifestyle Playlist -->
+    <playlist title="Daily Vlog Adventures" description="A look into my daily life" createdDate="2024-09-01" category="Lifestyle">
+        <video title="Morning Routine" duration="PT10M15S" uploadDate="2024-08-25" viewCount="30000" likes="5000" comments="300">
+            <tags>
+                <tag>Vlog</tag>
+                <tag>Routine</tag>
+                <tag>Morning</tag>
+            </tags>
+        </video>
+        <video title="Evening Walk" duration="PT8M" uploadDate="2024-08-26" viewCount="25000" likes="4500" comments="200">
+            <tags>
+                <tag>Vlog</tag>
+                <tag>Evening</tag>
+                <tag>Relax</tag>
+            </tags>
+        </video>
+        <tags>
+            <tag>DailyLife</tag>
+            <tag>Personal</tag>
+        </tags>
+    </playlist>
+</playlists>

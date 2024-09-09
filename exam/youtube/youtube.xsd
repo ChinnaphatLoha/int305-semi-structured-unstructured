@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <!-- Root Element: Playlists -->
+    <xs:element name="playlists">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="playlist" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Playlist Definition -->
+    <xs:element name="playlist">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="video" maxOccurs="unbounded"/>
+                <xs:element ref="tags" minOccurs="0"/>
+            </xs:sequence>
+            <xs:attribute name="title" type="xs:string" use="required"/>
+            <xs:attribute name="description" type="xs:string" use="optional"/>
+            <xs:attribute name="createdDate" type="xs:date" use="required"/>
+            <xs:attribute name="category" type="xs:string" use="optional"/>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Video Definition -->
+    <xs:element name="video">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="tags" minOccurs="0"/>
+            </xs:sequence>
+            <xs:attribute name="title" type="xs:string" use="required"/>
+            <xs:attribute name="duration" type="xs:duration" use="required"/>
+            <xs:attribute name="uploadDate" type="xs:date" use="required"/>
+            <xs:attribute name="viewCount" type="xs:integer" use="required"/>
+            <xs:attribute name="likes" type="xs:integer" use="optional"/>
+            <xs:attribute name="comments" type="xs:integer" use="optional"/>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Tags Definition (Used in both Playlist and Video) -->
+    <xs:element name="tags">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="tag" type="xs:string" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>
