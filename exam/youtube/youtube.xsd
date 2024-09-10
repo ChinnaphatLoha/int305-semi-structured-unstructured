@@ -31,7 +31,7 @@
                 <xs:element ref="tags" minOccurs="0"/>
             </xs:sequence>
             <xs:attribute name="title" type="xs:string" use="required"/>
-            <xs:attribute name="duration" type="xs:duration" use="required"/>
+            <xs:attribute name="duration" type="xs:positiveInteger" use="required"/>
             <xs:attribute name="uploadDate" type="xs:date" use="required"/>
             <xs:attribute name="viewCount" type="xs:integer" use="required"/>
             <xs:attribute name="likes" type="xs:integer" use="optional"/>
