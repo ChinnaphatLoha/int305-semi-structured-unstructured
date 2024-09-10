@@ -1,0 +1,15 @@
+6. //playlist[@title = "Top 10 Music Hits"]/video
+7. //video[@uploadDate > "2024-01-01"]
+8. //playlist[@category = "Education"]/video
+9. //playlist[.//tag = "DailyLife"]
+10. //playlist[@title = "Daily Vlog Adventures"]/video/@viewCount
+11. //video[@viewCount > 50000]
+12. //video[@likes > 1000]/@title
+13. //playlist[count(video) > 1]
+14. //playlist[@category = "Music" or @category = "Gaming"]/video/@title
+15. //video[@duration > 600]/@title
+16. //video[contains(@title, "Epic")]/@title
+17. max(//playlist[@title = "Top 10 Music Hits"]/video/@likes)
+18. avg(//video/@viewCount)
+19. distinct-values(//playlist/tags/tag)
+20. //playlist[@title = "Daily Vlog Adventures"]/video[last()]/@duration
